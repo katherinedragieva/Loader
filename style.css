@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color:	 #595959;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border-top: 16px solid #b3e6ff;
+    border-right: 16px solid  #80d4ff;
+    border-bottom: 16px solid #66ccff;
+    border-left: 16px solid  #4dc3ff;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#heading {
+    display: none;
+}
+.team-heading{
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#wrapper {
+    display:none;
+}
+.container{
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+#wrapper .personal-info {
+    width: 40%;
+    margin: 25px auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffff;
+    border-radius: 25px;
+    height: fit-content;
+    line-height: 4vh;
+}
+.job-title {
+    color: #999999;
+}
